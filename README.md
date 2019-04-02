@@ -11,3 +11,7 @@ Method: image segmentation(SIFT, cluster algorithms)
 
 Project Member: Kexin, Nathan, Yue
 
+sitf_kmeans_2.py: image segmentation which uses sitf to extract features and using kmeans to cluster.
+                  What's more, we use a second kmeans for the keypoints in each cluster which get from the former steps.
+                  In this step, we just cluster each keypoint by its coordinate in this step.(Only Physical Distance)
+
