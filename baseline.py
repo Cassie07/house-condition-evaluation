@@ -1,3 +1,5 @@
+# baseline
+# input: the entire buiding
 from keras.preprocessing.image import load_img
 from keras.preprocessing.image import img_to_array
 from keras.applications.vgg16 import preprocess_input
