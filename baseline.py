@@ -1,3 +1,8 @@
+# baseline
+# input: the entire buiding
+# code for getting a baseline
+# Then we can compare our result with this baseline to determine the performance of our method.
+# We use ResNet50
 from keras.preprocessing.image import load_img
 from keras.preprocessing.image import img_to_array
 from keras.applications.vgg16 import preprocess_input
