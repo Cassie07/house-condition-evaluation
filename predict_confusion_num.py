@@ -1,11 +1,12 @@
+% matplotlib inline
+import numpy as np
 import numpy as np
 import matplotlib.pyplot as plt
+
 from sklearn import svm, datasets
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import confusion_matrix
 from sklearn.utils.multiclass import unique_labels
-
-
 house_name='/projects/house_test.txt'
 patch_name='/projects/patch_test.txt'
 LABELS=['High','Medium','Low']
@@ -57,7 +58,7 @@ def plot_confusion_matrix(y_true, y_pred, classes,
         print('Confusion matrix, without normalization')
 
     print(cm)
-    
+
     fig, ax = plt.subplots()
     im = ax.imshow(cm, interpolation='nearest', cmap=cmap)
     ax.figure.colorbar(im, ax=ax)
@@ -84,7 +85,6 @@ def plot_confusion_matrix(y_true, y_pred, classes,
                     color="white" if cm[i, j] > thresh else "black")
     fig.tight_layout()
     return ax
-
 
 X_house_test,y_house_test= get_name_label(house_name)
 X_patch_test,y_patch_test= get_name_label(patch_name)
